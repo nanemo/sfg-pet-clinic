@@ -1,4 +1,4 @@
-package nadir.springframework.sfgpetclinic;
+package nadir.sfgpetclinic.springframework;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
