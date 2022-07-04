@@ -1,4 +1,4 @@
-package nadir.springframework.sfgpetclinic;
+package nadir.springframework.sfgpetclinic.modul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

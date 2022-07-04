@@ -6,26 +6,25 @@
     <modules>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
-
     </modules>
+
+    <name>sfg-pet-clinic</name>
+    <description>sfg-pet-clinic</description>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>nadir.springframework</groupId>
-    <artifactId>sfg-pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>sfg-pet-clinic</name>
-    <description>sfg-pet-clinic</description>
+
     <properties>
         <java.version>11</java.version>
     </properties>
-    <dependencies>
 
-
-    </dependencies>
+    <groupId>nadir.springframework</groupId>
+    <artifactId>sfg-pet-clinic</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <build>
         <plugins>
@@ -33,7 +32,20 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:git@github.com:https:nanemo/sfg-pet-clinic.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
 </project>
